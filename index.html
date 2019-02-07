@@ -125,32 +125,35 @@
       </section>
       <section class="contacts" id="anchor-4">
         <div class="container">
-          <form action="#" class="main-form" method="POST" enctype="text/plain" name="form">            
-            <div class="form-holder">
-              <h2>Напишите мне</h2>
-              <p class="user-firstName user">
-                <label for="firstName" class="visually-hidden">Имя</label>
-                <input id="firstName" class="user-name-input" type="text" placeholder="Имя"  name="first-name" required>
-              </p>
-              <p class="email user">
-                <label for="email" class="visually-hidden">Ваша почта</label>
-                <input id="email" type="email" placeholder="Ваша почта"  name="email" required>
-              </p>             
-              <p class="user-phone user">  
-                <label for="lastName" class="visually-hidden">Телефон</label>
-                <input id="lastName" type="tel" placeholder="Телефон"  name="phone" required>
-              </p>
-              <p class="message user"><label class="visually-hidden" for="message">Сообщение</label>
-                <textarea id="message" type="text" placeholder="Текст сообщения" name="text-message"></textarea>
-              </p>
-              <div class="checkbox-holder">
-                <label for="lastName" class="visually-hidden">Согласие на обработку персональных данных</label>
-                <input id="lastName"  class="checkbox" type="checkbox" placeholder="Даю согласие на обработку моих персональных данных"  name="checkbox-chek" required>
-                <p>Даю согласие на обработку моих персональных данных</p>
+          <div class="mega-row">
+            <form action="#" class="main-form" method="POST" enctype="text/plain" name="form">
+              <div class="form-holder">
+                <h2>Напишите мне</h2>
+                <p class="user-firstName user">
+                  <label for="firstName" class="visually-hidden">Имя</label>
+                  <input id="firstName" class="user-name-input" type="text" placeholder="Имя" name="first-name" required>
+                </p>
+                <p class="email user">
+                  <label for="email" class="visually-hidden">Ваша почта</label>
+                  <input id="email" type="email" placeholder="Ваша почта" name="email" required>
+                </p>
+                <p class="user-phone user">
+                  <label for="lastName" class="visually-hidden">Телефон</label>
+                  <input id="lastName" type="tel" placeholder="Телефон" name="phone" required>
+                </p>
+                <p class="message user"><label class="visually-hidden" for="message">Сообщение</label>
+                  <textarea id="message" type="text" placeholder="Текст сообщения" name="text-message"></textarea>
+                </p>
+                <div class="checkbox-holder">
+                  <label for="lastName" class="visually-hidden">Согласие на обработку персональных данных</label>
+                  <input id="lastName" class="checkbox" type="checkbox"
+                    placeholder="Даю согласие на обработку моих персональных данных" name="checkbox-chek" required>
+                  <p>Даю согласие на обработку моих персональных данных</p>
+                </div>
+                <button class="button" type="submit">Отправить</button>
               </div>
-              <button class="button" type="submit">Отправить</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>      
   </main>
