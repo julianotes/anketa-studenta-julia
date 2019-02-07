@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -37,6 +36,8 @@ a:hover {
 .button {   
     cursor:pointer;
     border:none;
+    background: -webkit-linear-gradient(25deg, #4d2dff 0, #fa542b 100%);
+    background: -o-linear-gradient(25deg, #4d2dff 0, #fa542b 100%);
     background: linear-gradient(65deg, #4d2dff 0, #fa542b 100%);
     color: #ffffff;   
     width: 139px;
@@ -45,10 +46,13 @@ a:hover {
     font-weight: 700;
     letter-spacing: 0.2ch;
     border-radius: 25px;
-    box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12);
+    -webkit-box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12);
+            box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12);
 }
 
 button:hover {
+    background: -webkit-linear-gradient(25deg, #4227dd 0, #ca4c2d 100%);
+    background: -o-linear-gradient(25deg, #4227dd 0, #ca4c2d 100%);
     background: linear-gradient(65deg, #4227dd 0, #ca4c2d 100%);
 }
 
@@ -121,6 +125,8 @@ input[type="radio"].visually-hidden {
 /*========================== МЕНЮ====================== */
 .header {
      background-color: #0064b4;     
+     background: -webkit-linear-gradient(25deg, #1274ED 0, #4992F0 100%);     
+     background: -o-linear-gradient(25deg, #1274ED 0, #4992F0 100%);     
      background: linear-gradient(65deg, #1274ED 0, #4992F0 100%);
      background-size: cover; 
      min-height: 545px; 
@@ -143,11 +149,20 @@ input[type="radio"].visually-hidden {
     width: 100%;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);        
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);        
+    display: -webkit-box;        
+    display: -ms-flexbox;        
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;      
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;      
     min-height: 75px;
     min-width: 320px;
     max-width: 1200px;  
@@ -156,19 +171,29 @@ input[type="radio"].visually-hidden {
 
 
 .top-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;    
-    align-items: center;
-    flex-wrap: wrap;    
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;    
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
 }
 
 .top-menu {
     margin-top:0;
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     padding-right: 2%;
 }
 
 .top-header-bg-blue {            
+    background: -webkit-linear-gradient(25deg, #1274ED 0, #4992F0 100%);            
+    background: -o-linear-gradient(25deg, #1274ED 0, #4992F0 100%);            
     background: linear-gradient(65deg, #1274ED 0, #4992F0 100%);    
 }
 
@@ -183,31 +208,57 @@ input[type="radio"].visually-hidden {
     padding: 5px 0 5px 0;
 }
 .top-menu a:hover {
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
     transition: 0.6s;
     border-bottom: 1px solid #3cdac9;
 }
 
 .header-logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     padding-left: 2%;
 }
 
 /* ================Основной блок==================== */
 .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: #ffffff;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 700px;    
 }
 .description-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: center;
     margin-top: 210px;
     margin-bottom: 80px;
@@ -232,19 +283,33 @@ input[type="radio"].visually-hidden {
     font-weight: 500;    
 }
 .button-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    flex-grow: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
     margin-bottom: 50px;
 }
 
 /* ===========================Обо Мне=============================== */
 
 .profile-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 7% 0 7%;      
 }
 
@@ -267,16 +332,27 @@ input[type="radio"].visually-hidden {
 
 
 .mega-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .row {
     /* min-height: 600px; */
     width: 1080px;    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;          
-    align-items: center;   
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;          
+    -webkit-box-align: center;          
+        -ms-flex-align: center;          
+            align-items: center;   
        
 }
 
@@ -302,7 +378,9 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: #fff;
     font-family: 'Arimo';
     font-size: 25px;
@@ -319,14 +397,18 @@ input[type="radio"].visually-hidden {
     width: 120%;
     border:10px solid transparent;
     border-radius: 3px;        
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);      
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);        
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);      
 }
 
 .hobbie-card:hover .card-overlay{
     display: block;            
 }
 .card-img:hover {    
-    box-shadow: 5px 5px 22px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 5px 5px 22px 0 rgba(0, 0, 0, 0.14);    
+            box-shadow: 5px 5px 22px 0 rgba(0, 0, 0, 0.14);
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
     transition: 0.8s;
     background-color:rgba(0, 0, 0, 0.70);
     
@@ -335,20 +417,32 @@ input[type="radio"].visually-hidden {
 /* ============================================================Контактная форма============================================================= */
 
 .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    align-items: center;
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
     min-height: 900px;    
 }
 .main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;    
-    align-items: center;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;    
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;    
     width: 500px;
     margin: 0;
     padding: 0;       
     min-height: 735px;
     background-color: #fff; 
-    box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12);
+    -webkit-box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12); 
+            box-shadow: 0 8px 24px rgba(43, 27, 61, 0.12);
     border-radius: 9px; 
       
 }
@@ -358,10 +452,19 @@ input[type="radio"].visually-hidden {
 }
 
 .form-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;   
     height: 100%;
     width:500px;
@@ -378,7 +481,8 @@ input[type="radio"].visually-hidden {
     padding-left: 10px;
     border:none;
     outline: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius:4px;
     background-color: #f6f8fa;
     color: #000;
@@ -397,8 +501,12 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-family: 'Open Sans';
     font-size: 13px;
     margin-bottom: 5ch;
@@ -425,10 +533,19 @@ input[type="radio"].visually-hidden {
 
 
 .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     width: 100%;
     padding: 0 4ch 0 4ch;    
 }
@@ -439,8 +556,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts-wrap ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .footer-contacts-wrap ul li {    
     margin: 0 2ch 0 2ch;
@@ -457,16 +578,21 @@ input[type="radio"].visually-hidden {
         width: 100%;
     }
     .profile-wrap {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .row {
-        justify-content: center;                
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;                
     } 
   
 }
 
-@media(max-width: 500px) {
+@media(max-width: 500px) {    
     .main-form {
         width: 400px;
     }
@@ -490,7 +616,7 @@ input[type="radio"].visually-hidden {
     }
 }
 
-@media(max-width: 410px) {
+@media(max-width: 410px) {    
     .main-form {
         width: 350x;
     }
@@ -505,7 +631,7 @@ input[type="radio"].visually-hidden {
     
 }
 
-@media(max-width: 375px) {    
+@media(max-width: 375px) {      
     .main-form {
         width: 280px;
        }   
@@ -522,6 +648,7 @@ input[type="radio"].visually-hidden {
     }
     
 }
+
 
 
 
