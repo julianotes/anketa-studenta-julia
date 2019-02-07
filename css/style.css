@@ -659,6 +659,12 @@ input[type="radio"].visually-hidden {
     
 }
 
+@media(max-width: 360px) {
+    nav ul{
+        width: 350px;
+    }
+}
+
 
 
 
