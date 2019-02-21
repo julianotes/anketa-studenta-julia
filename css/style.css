@@ -628,7 +628,7 @@ input[type="radio"].visually-hidden {
 
 @media(max-width: 410px) {    
     .main-form {
-        width: 350x;
+        width: 350px;
     }
     .user {
         width: 70%;
